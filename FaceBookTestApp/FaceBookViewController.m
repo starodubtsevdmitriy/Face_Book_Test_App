@@ -16,9 +16,7 @@ static NSString* kAppId =  @"321076461279492";
 @synthesize facebook = _facebook;
 @synthesize isLoggedIn = _isLoggedIn;
 
-/// UIViewController
-
-/**
+/*
  * initialization
  */
 
@@ -39,7 +37,7 @@ static NSString* kAppId =  @"321076461279492";
     return self;
 }
 
-/**
+/*
  * Set initial view
  */
 
@@ -50,11 +48,11 @@ static NSString* kAppId =  @"321076461279492";
     _facebook = [[Facebook alloc] initWithAppId:kAppId andDelegate:self];
     [self.label setText:@"Please log in"];
     _fbButton.hidden = NO;
-    _publishStreamButton.hidden = YES;
+    _publishStreamButton.hidden = YES; // Hide Publish Stream button
     _isLoggedIn = NO;
 }
 
-/**
+/*
  * Show the authorization dialog.
  */
 
@@ -62,13 +60,13 @@ static NSString* kAppId =  @"321076461279492";
     [_facebook authorize:_permissions];
 }
 
-/**
- * Invalidate the access token and clear the cookie.
- */
-
 - (void)logout {
     [_facebook logout:self];
 }
+
+/*
+ * Processing Publish Stream button is pressed. 
+ */
 
 - (IBAction)publishStream:(id)sender {
     SBJSON *jsonWriter = [SBJSON new];
@@ -88,6 +86,48 @@ static NSString* kAppId =  @"321076461279492";
                                    nil];
     [_facebook dialog:@"feed" andParams:params andDelegate:self];
 }
+
+/*
+ * Processing Facebook button is pressed. 
+ */
+
+- (IBAction)fbButtonClick:(id)sender {
+    if (_isLoggedIn == YES) {
+        [self logout];
+        _isLoggedIn = NO;
+    } else {
+        [self login];
+        _isLoggedIn = YES;
+    }
+
+}
+
+/*
+ * Called when the user has logged in successfully.
+ */
+
+- (void)fbDidLogin {
+    _publishStreamButton.hidden = NO; // Show Publish Stream button when user login
+    [self.label setText:@"logged in"];
+}
+
+/*
+ * Called when the user canceled the authorization dialog.
+ */
+
+-(void)fbDidNotLogin:(BOOL)cancelled {
+    NSLog(@"did not login");
+}
+
+/*
+ * Called when the request logout has succeeded.
+ */
+
+- (void)fbDidLogout {
+    _publishStreamButton.hidden = YES; // Hide Publish Stream button when user logout
+    [self.label setText:@"Please log in"];
+}
+
 
 - (void)viewDidUnload {
     _fbButton = nil;
@@ -119,41 +159,6 @@ static NSString* kAppId =  @"321076461279492";
 	[super viewDidDisappear:animated];
 }
 
-- (IBAction)fbButtonClick:(id)sender {
-    if (_isLoggedIn == YES) {
-        [self logout];
-        _isLoggedIn = NO;
-    } else {
-        [self login];
-        _isLoggedIn = YES;
-    }
 
-}
-
-/**
- * Called when the user has logged in successfully.
- */
-
-- (void)fbDidLogin {
-    _publishStreamButton.hidden = NO;
-    [self.label setText:@"logged in"];
-}
-
-/**
- * Called when the user canceled the authorization dialog.
- */
-
--(void)fbDidNotLogin:(BOOL)cancelled {
-    NSLog(@"did not login");
-}
-
-/**
- * Called when the request logout has succeeded.
- */
-
-- (void)fbDidLogout {
-    _publishStreamButton.hidden = YES;
-    [self.label setText:@"Please log in"];
-}
 
 @end
