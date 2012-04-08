@@ -16,20 +16,18 @@ static NSString* kAppId =  @"321076461279492";
 @synthesize facebook = _facebook;
 @synthesize isLoggedIn = _isLoggedIn;
 
-//////////////////////////////////////////////////////////////////////////////////////////////////
-// UIViewController
+/// UIViewController
 
 /**
  * initialization
  */
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (!kAppId) {
         NSLog(@"missing app id!");
         exit(1);
         return nil;
     }
-    
-   
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         _permissions =  [NSArray arrayWithObjects:
                           @"read_stream", @"offline_access",nil];
@@ -37,14 +35,16 @@ static NSString* kAppId =  @"321076461279492";
     _label = [[UILabel alloc] init];
     _fbButton = [[UIButton alloc] init];
     _publishStreamButton = [[UIButton alloc]init];
+    
     return self;
 }
 
 /**
  * Set initial view
  */
+
 - (void)viewDidLoad {
-        //set the view's background color
+    //set the view's background color
     self.view.backgroundColor = [UIColor whiteColor];
     self.view.userInteractionEnabled = YES;
     _facebook = [[Facebook alloc] initWithAppId:kAppId andDelegate:self];
@@ -54,16 +54,18 @@ static NSString* kAppId =  @"321076461279492";
     _isLoggedIn = NO;
 }
 
-///**
-// * Show the authorization dialog.
-// */
+/**
+ * Show the authorization dialog.
+ */
+
 - (void)login {
     [_facebook authorize:_permissions];
 }
 
-///**
-// * Invalidate the access token and clear the cookie.
-// */
+/**
+ * Invalidate the access token and clear the cookie.
+ */
+
 - (void)logout {
     [_facebook logout:self];
 }
@@ -131,6 +133,7 @@ static NSString* kAppId =  @"321076461279492";
 /**
  * Called when the user has logged in successfully.
  */
+
 - (void)fbDidLogin {
     _publishStreamButton.hidden = NO;
     [self.label setText:@"logged in"];
@@ -139,6 +142,7 @@ static NSString* kAppId =  @"321076461279492";
 /**
  * Called when the user canceled the authorization dialog.
  */
+
 -(void)fbDidNotLogin:(BOOL)cancelled {
     NSLog(@"did not login");
 }
@@ -146,6 +150,7 @@ static NSString* kAppId =  @"321076461279492";
 /**
  * Called when the request logout has succeeded.
  */
+
 - (void)fbDidLogout {
     _publishStreamButton.hidden = YES;
     [self.label setText:@"Please log in"];
