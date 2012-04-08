@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA527DC9153055FD00D8E151 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA527DC8153055FD00D8E151 /* libfacebook_ios_sdk.a */; };
+		EA527E52153098AC00D8E151 /* Facebook_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = EA527E51153098AB00D8E151 /* Facebook_Button.png */; };
+		EA70972C15304938008CA8E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70972B15304938008CA8E4 /* UIKit.framework */; };
+		EA70972E15304938008CA8E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70972D15304938008CA8E4 /* Foundation.framework */; };
+		EA70973015304938008CA8E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA70972F15304938008CA8E4 /* CoreGraphics.framework */; };
+		EA70973615304938008CA8E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA70973415304938008CA8E4 /* InfoPlist.strings */; };
+		EA70973815304938008CA8E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70973715304938008CA8E4 /* main.m */; };
+		EA70973C15304938008CA8E4 /* FaceBookAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70973B15304938008CA8E4 /* FaceBookAppDelegate.m */; };
+		EA70973F15304938008CA8E4 /* FaceBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70973E15304938008CA8E4 /* FaceBookViewController.m */; };
+		EA70974215304938008CA8E4 /* FaceBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA70974015304938008CA8E4 /* FaceBookViewController.xib */; };
+		EA70974915304A9E008CA8E4 /* src in Resources */ = {isa = PBXBuildFile; fileRef = EA70974815304A9E008CA8E4 /* src */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA527DC8153055FD00D8E151 /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfacebook_ios_sdk.a; sourceTree = "<group>"; };
+		EA527E51153098AB00D8E151 /* Facebook_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Facebook_Button.png; path = src/Facebook_Button.png; sourceTree = "<group>"; };
+		EA70972715304938008CA8E4 /* FaceBookTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceBookTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA70972B15304938008CA8E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA70972D15304938008CA8E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA70972F15304938008CA8E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA70973315304938008CA8E4 /* FaceBookTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FaceBookTestApp-Info.plist"; sourceTree = "<group>"; };
+		EA70973515304938008CA8E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA70973715304938008CA8E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA70973915304938008CA8E4 /* FaceBookTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaceBookTestApp-Prefix.pch"; sourceTree = "<group>"; };
+		EA70973A15304938008CA8E4 /* FaceBookAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceBookAppDelegate.h; sourceTree = "<group>"; };
+		EA70973B15304938008CA8E4 /* FaceBookAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceBookAppDelegate.m; sourceTree = "<group>"; };
+		EA70973D15304938008CA8E4 /* FaceBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceBookViewController.h; sourceTree = "<group>"; };
+		EA70973E15304938008CA8E4 /* FaceBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceBookViewController.m; sourceTree = "<group>"; };
+		EA70974115304938008CA8E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FaceBookViewController.xib; sourceTree = "<group>"; };
+		EA70974815304A9E008CA8E4 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA70972415304938008CA8E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA70972C15304938008CA8E4 /* UIKit.framework in Frameworks */,
+				EA70972E15304938008CA8E4 /* Foundation.framework in Frameworks */,
+				EA70973015304938008CA8E4 /* CoreGraphics.framework in Frameworks */,
+				EA527DC9153055FD00D8E151 /* libfacebook_ios_sdk.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA70971C15304938008CA8E4 = {
+			isa = PBXGroup;
+			children = (
+				EA527E51153098AB00D8E151 /* Facebook_Button.png */,
+				EA527DC8153055FD00D8E151 /* libfacebook_ios_sdk.a */,
+				EA70974815304A9E008CA8E4 /* src */,
+				EA70973115304938008CA8E4 /* FaceBookTestApp */,
+				EA70972A15304938008CA8E4 /* Frameworks */,
+				EA70972815304938008CA8E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA70972815304938008CA8E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA70972715304938008CA8E4 /* FaceBookTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA70972A15304938008CA8E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA70972B15304938008CA8E4 /* UIKit.framework */,
+				EA70972D15304938008CA8E4 /* Foundation.framework */,
+				EA70972F15304938008CA8E4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA70973115304938008CA8E4 /* FaceBookTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				EA70973A15304938008CA8E4 /* FaceBookAppDelegate.h */,
+				EA70973B15304938008CA8E4 /* FaceBookAppDelegate.m */,
+				EA70973D15304938008CA8E4 /* FaceBookViewController.h */,
+				EA70973E15304938008CA8E4 /* FaceBookViewController.m */,
+				EA70974015304938008CA8E4 /* FaceBookViewController.xib */,
+				EA70973215304938008CA8E4 /* Supporting Files */,
+			);
+			path = FaceBookTestApp;
+			sourceTree = "<group>";
+		};
+		EA70973215304938008CA8E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA70973315304938008CA8E4 /* FaceBookTestApp-Info.plist */,
+				EA70973415304938008CA8E4 /* InfoPlist.strings */,
+				EA70973715304938008CA8E4 /* main.m */,
+				EA70973915304938008CA8E4 /* FaceBookTestApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA70972615304938008CA8E4 /* FaceBookTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA70974515304938008CA8E4 /* Build configuration list for PBXNativeTarget "FaceBookTestApp" */;
+			buildPhases = (
+				EA70972315304938008CA8E4 /* Sources */,
+				EA70972415304938008CA8E4 /* Frameworks */,
+				EA70972515304938008CA8E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceBookTestApp;
+			productName = FaceBookTestApp;
+			productReference = EA70972715304938008CA8E4 /* FaceBookTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA70971E15304938008CA8E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = EA70972115304938008CA8E4 /* Build configuration list for PBXProject "FaceBookTestApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EA70971C15304938008CA8E4;
+			productRefGroup = EA70972815304938008CA8E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA70972615304938008CA8E4 /* FaceBookTestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA70972515304938008CA8E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA70973615304938008CA8E4 /* InfoPlist.strings in Resources */,
+				EA70974215304938008CA8E4 /* FaceBookViewController.xib in Resources */,
+				EA70974915304A9E008CA8E4 /* src in Resources */,
+				EA527E52153098AC00D8E151 /* Facebook_Button.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA70972315304938008CA8E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA70973815304938008CA8E4 /* main.m in Sources */,
+				EA70973C15304938008CA8E4 /* FaceBookAppDelegate.m in Sources */,
+				EA70973F15304938008CA8E4 /* FaceBookViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA70973415304938008CA8E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA70973515304938008CA8E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA70974015304938008CA8E4 /* FaceBookViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA70974115304938008CA8E4 /* en */,
+			);
+			name = FaceBookViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA70974315304938008CA8E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = src/..;
+			};
+			name = Debug;
+		};
+		EA70974415304938008CA8E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = src/..;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA70974615304938008CA8E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FaceBookTestApp/FaceBookTestApp-Prefix.pch";
+				INFOPLIST_FILE = "FaceBookTestApp/FaceBookTestApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "src/JSON/ src/";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA70974715304938008CA8E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FaceBookTestApp/FaceBookTestApp-Prefix.pch";
+				INFOPLIST_FILE = "FaceBookTestApp/FaceBookTestApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "src/JSON/ src/";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA70972115304938008CA8E4 /* Build configuration list for PBXProject "FaceBookTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA70974315304938008CA8E4 /* Debug */,
+				EA70974415304938008CA8E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA70974515304938008CA8E4 /* Build configuration list for PBXNativeTarget "FaceBookTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA70974615304938008CA8E4 /* Debug */,
+				EA70974715304938008CA8E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA70971E15304938008CA8E4 /* Project object */;
+}
